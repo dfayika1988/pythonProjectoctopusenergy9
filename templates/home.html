@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Sportssearch </title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/home.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<h2 class="sportsText"> Sports search</h2>
+<form class="sportsText" id="sportsForm"  action="{{ url_for('render_results') }}" method="post" >
+     Match id Code: <input id="sportsFormInput" type="text" name="idCode"><br>
+    <input id="sportsSubmit" type="submit" value="Submit">
+</form>
+
+</body>
+</html>
